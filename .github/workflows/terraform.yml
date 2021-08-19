@@ -21,8 +21,8 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
-    - name: terraform fmt
-      uses: dflook/terraform-fmt@v1
+    - name: terraform validate
+      uses: dflook/terraform-validate@v1
       with:
         path: ./
       env:
