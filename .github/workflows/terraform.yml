@@ -2,11 +2,9 @@ name: 'Terraform'
 
 on:
   workflow_dispatch:
-    inputs:
-      name:
-        description: 'Person to greet'
-        required: true
-        default: 'Mona the Octocat'
+  push:
+     branches:
+       - main
 
 jobs:
   terraform:
