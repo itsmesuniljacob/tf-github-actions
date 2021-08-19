@@ -25,3 +25,5 @@ jobs:
       uses: dflook/terraform-fmt@v1
       with:
         path: ./
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
